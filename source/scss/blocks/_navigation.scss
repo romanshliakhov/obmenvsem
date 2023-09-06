@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+
+    a {
+      display: flex;
+      align-items: center;
+      grid-gap: 14px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+
+    span {
+      font-size: 12px;
+      line-height: 13px;
+      padding: 4px;
+      border-radius: 50px;
+      background-color: var(--color-blue-light);
+    }
+  }
+}
