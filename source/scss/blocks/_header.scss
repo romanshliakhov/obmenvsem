@@ -1,4 +1,23 @@
-header {
-  background-color: red;
+.header {
+  padding: 20px 0 25px;
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 40px;
+  }
+
+  &__mid {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__add {
+    width: fit-content;
+    flex-shrink: 0;
+  }
 }
 

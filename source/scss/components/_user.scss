@@ -1,0 +1,8 @@
+.user {
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &__icon {
+    display: flex;
+  }
+}

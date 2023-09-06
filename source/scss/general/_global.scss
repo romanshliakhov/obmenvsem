@@ -4,11 +4,11 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: var(--font-family-inter);
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  color: var(--color-gray);
+  font-family: var(--font-family-gotham);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-black);
 }
 
 html {
@@ -23,9 +23,9 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+// * {
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
 
 // *::-webkit-scrollbar {
 //   width: 5px;
@@ -180,10 +180,10 @@ input[type="number"] {
 
 .container {
   position: relative;
-  max-width: 1640px;
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 clamp(10px, 3.125vw, 60px);
+  padding: 0 clamp(16px, 3.419vw, 40px);
 }
 
 .disable-scroll {
@@ -195,9 +195,4 @@ input[type="number"] {
   width: 100%;
 }
 
-[data-content] {
-  max-width: 211px;
-  overflow: hidden;
-  transition: all 0.5s;
-}
 

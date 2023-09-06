@@ -1,5 +1,41 @@
 <header class="header">
   <div class="container">
-    header
+    <div class="header__wrapp">
+      <a class="header__logo" href="/">
+        <svg width='250' height='40'>
+          <use href='img/sprite/sprite.svg#logo'></use>
+        </svg>
+      </a>
+
+      <div class="header__mid">
+        <form class="search">
+          <label class="search__label">
+            <input class="search__input" type="search" placeholder="Поиск файлов">
+
+            <button class="search__btn">
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#search-icon'></use>
+              </svg>
+              <span>Найти</span>
+            </button>
+          </label>
+        </form>
+
+        <a class="header__add btn" href="#">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#add-icon'></use>
+          </svg>
+          <span>Добавить файл</span>
+        </a>
+      </div>
+
+      <div class="user">
+        <div class="user__icon">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#user'></use>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
