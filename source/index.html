@@ -7,9 +7,54 @@
     @include('partials/header.html',{})
 
     <main class="main">
-      <div class="container">
-        start
-      </div>
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapp">
+            <aside class="block__aside">
+              <span>Вход</span>
+
+              <div class="navigation">
+                <span class="heading">Навигация</span>
+
+                <ul>
+                  <li>
+                    1
+                  </li>
+                  <li>
+                    2
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recommendation">
+                <span class="heading">Рекомендуем</span>
+
+                <ul class="recommendation__list">
+                  <li>
+                    <a href="#">Музыка: миллионы песен!</a>
+                  </li>
+                  <li>
+                    <a href="#">Всё видео мира + поиск!</a>
+                  </li>
+                  <li>
+                    <a href="#">Эротические рассказы!</a>
+                  </li>
+                  <li>
+                    <a href="#">XXX-Видео и Картинки!</a>
+                  </li>
+                  <li>
+                    <a href="#">Бесплатные Загрузки!</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+
+            <div class="block__content">
+              Файлообменник
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})

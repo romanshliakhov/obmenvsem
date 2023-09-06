@@ -1,0 +1,15 @@
+.block {
+  padding-bottom: 43px;
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-gap: 50px;
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 36px;
+  }
+}
