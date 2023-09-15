@@ -1,9 +1,9 @@
 // Select
-let selects = document.querySelectorAll('.lang');
+let selects = document.querySelectorAll('.select');
 
 let selectScript = function (select) {
   select.forEach((item) => {
-    const selectCurrent = item.querySelector(".lang__current");
+    const selectCurrent = item.querySelector(".select__current");
 
     item.addEventListener("click", (event) => {
       const el = event.target.dataset.choice;

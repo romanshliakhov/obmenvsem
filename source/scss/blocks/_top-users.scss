@@ -28,18 +28,6 @@
       z-index: 1;
     }
 
-    &::after {
-      // content: '';
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // width: 19px;
-      // height: 23px;
-      // border-radius: 50px;
-      // border: 2px solid var(--color-white);
-      // background-color: var(--color-yellow);
-    }
-
     &:first-child {
       padding-top: 0;
 

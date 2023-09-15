@@ -1,0 +1,40 @@
+.file {
+  display: flex;
+  align-items: flex-start;
+  grid-gap: 12px;
+
+  &__image {
+    flex-shrink: 0;
+    width: 73px;
+    height: 73px;
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+  }
+
+  &__title {
+    color: var(--color-pink);
+    font-weight: 700;
+  }
+
+  &__descr {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__downloads {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-gray-mid);
+  }
+}

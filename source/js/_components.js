@@ -1,7 +1,7 @@
 import './components/accordions.js';
 import './components/sliders.js';
 import './components/resultChange.js';
-// import './components/select.js';
+import './components/select.js';
 import './components/burger.js';
 
 import './components/spollers.js';
