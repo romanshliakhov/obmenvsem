@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapp">
+            <aside class="block__aside">
+              <span>Вход</span>
+
+              <div class="navigation">
+                <span class="heading">Навигация</span>
+
+                <ul class="navigation__list">
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#chat'></use>
+                      </svg>
+                      <span class="navigation__text">Чат</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#email'></use>
+                      </svg>
+                      <span class="navigation__text">Мои письма <span>23</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#filesexchange'></use>
+                      </svg>
+                      <span class="navigation__text">Файлообменник</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#photoalbum'></use>
+                      </svg>
+                      <span class="navigation__text">Фотоальбом</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#forum'></use>
+                      </svg>
+                      <span class="navigation__text">Форум</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recommendation">
+                <span class="heading">Рекомендуем</span>
+
+                <ul class="recommendation__list">
+                  <li>
+                    <a href="#">Музыка: миллионы песен!</a>
+                  </li>
+                  <li>
+                    <a href="#">Всё видео мира + поиск!</a>
+                  </li>
+                  <li>
+                    <a href="#">Эротические рассказы!</a>
+                  </li>
+                  <li>
+                    <a href="#">XXX-Видео и Картинки!</a>
+                  </li>
+                  <li>
+                    <a href="#">Бесплатные Загрузки!</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+
+            <div class="block__content">
+              <div class="block__content-header">
+                <h1 class="block__title">Правила обменника</h1>
+              </div>
+
+              <div class="rules">
+                <h2>Уважаемый посетитель</h2>
+                <p>Администрация Вап-Обменника Wap.SaSiSa.Ru (далее "Сайт") предлагает Вам услуги Сайта на условиях, являющихся предметом настоящих Правил пользования Обменником и обращает Ваше внимание, что весь контент, представленный в обменнике добавлен сюда такими же как и Вы посетителями.</p>
+
+                <h2>Запрещается размещение материалов</h2>
+                <ol>
+                  <li>Строго запрещается заливать в обменник вредоносные файлы, а также файлы, содержащие детскую порнографию, зоофилию, разжигающие межнациональные конфликты, противоречащие законам РФ!</li>
+                  <li>Видео-файлов и фотографий содержащих сцены жестокости и насилия над людьми и животными, изображение смерти и.т.п.;</li>
+                  <li>Нарушающих общепринятые нормы морали</li>
+                  <li>Нарушающих права третьих лиц;</li>
+                  <li>Оскорбляющих отдельных пользователей или группы пользователей по национальному, религиозному или иному признаку;</li>
+                  <li>Направленных на разжигание межнациональной и/или межрелигиозной вражды; - пропагандирующих нацистскую символику;</li>
+                  <li>Содержащих описание средств и способов суицида, любое подстрекательство к его совершению;</li>
+                </ol>
+
+                <h2>В комментариях запрещается</h2>
+                <ul>
+                  <li>Содержание нецензурной речи и брани, вне зависимости от того, в каком виде и кому они адресованы.</li>
+                  <li>Содержание коммерческой информации, рекламы, антирекламы или ссылок на сторонние ресурсы.</li>
+                  <li>Содержание информации, публикация которой запрещена законом (пропаганды употребления наркотиков, разжигания межнациональной розни, нарушений прав несовершеннолетних и т.д.)</li>
+                </ul>
+
+                <h2>В комментариях запрещается</h2>
+                <ul>
+                  <li>Содержание нецензурной речи и брани, вне зависимости от того, в каком виде и кому они адресованы.</li>
+                  <li>Содержание коммерческой информации, рекламы, антирекламы или ссылок на сторонние ресурсы.</li>
+                  <li>Содержание информации, публикация которой запрещена законом (пропаганды употребления наркотиков, разжигания межнациональной розни, нарушений прав несовершеннолетних и т.д.)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include('partials/footer.html',{}) -->
+    <!-- @include('partials/modals.html',{}) -->
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

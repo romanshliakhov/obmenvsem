@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapp">
+            <aside class="block__aside">
+              <span>Вход</span>
+
+              <div class="navigation">
+                <span class="heading">Навигация</span>
+
+                <ul class="navigation__list">
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#chat'></use>
+                      </svg>
+                      <span class="navigation__text">Чат</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#email'></use>
+                      </svg>
+                      <span class="navigation__text">Мои письма <span>23</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#filesexchange'></use>
+                      </svg>
+                      <span class="navigation__text">Файлообменник</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#photoalbum'></use>
+                      </svg>
+                      <span class="navigation__text">Фотоальбом</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#forum'></use>
+                      </svg>
+                      <span class="navigation__text">Форум</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recommendation">
+                <span class="heading">Рекомендуем</span>
+
+                <ul class="recommendation__list">
+                  <li>
+                    <a href="#">Музыка: миллионы песен!</a>
+                  </li>
+                  <li>
+                    <a href="#">Всё видео мира + поиск!</a>
+                  </li>
+                  <li>
+                    <a href="#">Эротические рассказы!</a>
+                  </li>
+                  <li>
+                    <a href="#">XXX-Видео и Картинки!</a>
+                  </li>
+                  <li>
+                    <a href="#">Бесплатные Загрузки!</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="feedback">
+                <div class="feedback__text">Обратная связь <span>/</span><br> Для правообладателей</div>
+                <a class="feedback__email" href="mailto:abuse.obmen@gmail.com">abuse.obmen@gmail.com</a>
+                <span class="feedback__copyright">© ObmenVsem.org & SaSiSa.Org</span>
+              </div>
+            </aside>
+
+            <div class="block__content">
+              <div class="block__content-header">
+                <h1 class="block__title">Топ-100 пользователей</h1>
+              </div>
+
+              <div class="top-users">
+                <ul class="top-users__list">
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/baggi.webp'>
+                          <img width='56' height='56' src='img/users/baggi.png' alt='baggi'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">b@ggi</a>
+                        <p class="top-user__files">залила <span>219 645</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/jibgiro.webp'>
+                          <img width='56' height='56' src='img/users/jibgiro.png' alt='jibgiro'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">Jibgiro</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/liljon.webp'>
+                          <img width='56' height='56' src='img/users/liljon.png' alt='liljon'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">LIL_JON</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/babayka.webp'>
+                          <img width='56' height='56' src='img/users/babayka.png' alt='babayka71'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">babayka71</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/kurov.webp'>
+                          <img width='56' height='56' src='img/users/kurov.png' alt='куровчанин'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">куровчанин</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/liljon.webp'>
+                          <img width='56' height='56' src='img/users/liljon.png' alt='liljon'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">LIL_JON</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/babayka.webp'>
+                          <img width='56' height='56' src='img/users/babayka.png' alt='babayka71'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">babayka71</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/kurov.webp'>
+                          <img width='56' height='56' src='img/users/kurov.png' alt='куровчанин'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">куровчанин</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/liljon.webp'>
+                          <img width='56' height='56' src='img/users/liljon.png' alt='liljon'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">LIL_JON</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="top-users__item">
+                    <div class="top-user">
+                      <div class="top-user__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/users/babayka.webp'>
+                          <img width='56' height='56' src='img/users/babayka.png' alt='babayka71'>
+                        </picture>
+                      </div>
+
+                      <div class="top-user__info">
+                        <a class="top-user__nickname" href="#">babayka71</a>
+                        <p class="top-user__files">залила <span>245 493</span> файлов</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <button class="show-more">Показать еще</button>
+
+                <div class="pagination">
+                  <a class="pagination__nav pagination__nav--prev" href="#">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#pagination-left'></use>
+                    </svg>
+                  </a>
+
+                  <ul class="pagination__list">
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">1</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link active" href="#">2</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">3</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">4</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <span>...</span>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">25</a>
+                    </li>
+                  </ul>
+                  <a class="pagination__nav pagination__nav--next" href="#">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#pagination-right'></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include('partials/footer.html',{}) -->
+    <!-- @include('partials/modals.html',{}) -->
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -81,17 +81,288 @@
                   </li>
                 </ul>
               </div>
+
+              <div class="feedback">
+                <div class="feedback__text">Обратная связь <span>/</span><br> Для правообладателей</div>
+                <a class="feedback__email" href="mailto:abuse.obmen@gmail.com">abuse.obmen@gmail.com</a>
+                <span class="feedback__copyright">© ObmenVsem.org & SaSiSa.Org</span>
+              </div>
             </aside>
 
             <div class="block__content">
-              Файлообменник
+              <div class="block__top-links">
+                <a class="block__top-link" href="/top-users.html">
+                  <ul class="block__link-users">
+                    <li>
+                      <picture>
+                        <source type='image/webp' srcset='img/users/user1.webp'>
+                        <img width='40' height='40' src='img/users/user1.png' alt='User 1'>
+                      </picture>
+                    </li>
+                    <li>
+                      <picture>
+                        <source type='image/webp' srcset='img/users/user2.webp'>
+                        <img width='40' height='40' src='img/users/user2.png' alt='User 2'>
+                      </picture>
+                    </li>
+                    <li>
+                      <picture>
+                        <source type='image/webp' srcset='img/users/user3.webp'>
+                        <img width='40' height='40' src='img/users/user3.png' alt='User 3'>
+                      </picture>
+                    </li>
+                  </ul>
+
+                  <span class="block__link-title"><span>Топ-100</span> пользователей</span>
+
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-right'></use>
+                  </svg>
+                </a>
+
+                <a class="block__top-link" href="/top-files.html">
+                  <svg width='44' height='44'>
+                    <use href='img/sprite/sprite.svg#library'></use>
+                  </svg>
+
+                  <span class="block__link-title"><span>Топ-500</span> файлов</span>
+
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-right'></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="categories">
+                <div class="categories__tabs tabs">
+                  <ul class="tabs__controls">
+                    <li class="tabs__links active" tabs-btn="by-categories">
+                      <button class="tabs__btn">
+                        <span>По категориям</span>
+                      </button>
+                    </li>
+                    <li class="tabs__links" tabs-btn="by-files">
+                      <button class="tabs__btn">
+                          <span>По типам файлов</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <ul class="tabs__tabcontents">
+                    <li class="tabs__content active" tabs-content="by-categories">
+                      <ul class="categories__content">
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#photo'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Фото <span><span>1 048 023</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#video'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Видео <span><span>286 006</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#games'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Игры <span><span>1 429</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#programms'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Программы <span><span>1 307</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='30'>
+                              <use href='img/sprite/sprite.svg#creation'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Творчество обитателей <span><span>1 097</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#18+'></use>
+                            </svg>
+
+                            <div class="categories__link-title">18+ <span><span>4 097</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#images'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Картинки <span><span>9 579</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#animations'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Анимашки <span><span>9 579</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#audio'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Аудио <span><span>9 351</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#music'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Музыка <span><span>30 758</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#themes'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Темы <span><span>1 509</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#books'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Книги <span><span>1 509</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#docs'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Статьи, Документы <span><span>1 509</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#flash'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Флеш (Flash) <span><span>1 509</span> файлов</span></div>
+                          </a>
+                        </li>
+
+                        <li class="categories__item">
+                          <a class="categories__link" href="#">
+                            <svg width='36' height='36'>
+                              <use href='img/sprite/sprite.svg#extra'></use>
+                            </svg>
+
+                            <div class="categories__link-title">Прочее <span><span>1 509</span> файлов</span></div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="tabs__content" tabs-content="by-files">
+                      <div class="categories__content">
+                        По Файлам
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="information">
+                <span class="title">Информация</span>
+
+                <ul class="information__list">
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#chat'></use>
+                      </svg>
+                      <span class="information__text">Замечания или предложения</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/online-users.html">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#forum'></use>
+                      </svg>
+                      <span class="information__text">Сейчас онлайн <span>530</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/rules.html">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#rules'></use>
+                      </svg>
+                      <span class="information__text">Правила обменника</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/moderators.html">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#flag'></use>
+                      </svg>
+                      <span class="information__text">Список модераторов</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="textblock">
+                <h1 class="textblock__title title">Файлообменник</h1>
+
+                <p class="textblock__text">Удобный мобильный WAP файлообменник позволит Вам скачать и загрузить свой файл из телефона и поделиться им с вашими друзьями. Закачайте ваш собственный файл и получите на него прямую ссылку. Кроме того, файл отобразится в самом файлообменнике и станет доступен для любого пользователя. Для загрузки файла в интернет с телефона, необходимо быть зарегистрированным на мобильном портале ObmenVsem.org. Загружайте, скачивайте, делитесь абсолютно любыми файлами, используя наш файлообменник для телефонов. Это новый адрес для бывшего обменника sasisa.org</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    @include('partials/footer.html',{})
+    <!-- @include('partials/footer.html',{}) -->
     <!-- @include('partials/modals.html',{}) -->
   </div>
 

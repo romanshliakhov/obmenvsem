@@ -1,0 +1,26 @@
+.information {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+
+    a {
+      display: flex;
+      align-items: center;
+      grid-gap: 14px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

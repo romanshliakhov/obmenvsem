@@ -6,11 +6,11 @@ function tabsInit() {
   tabsParrents.map(function(tabsParr) {
     if (tabsParr) {
       document.addEventListener('DOMContentLoaded', () => {
-        const tabsBtn = tabsParr.querySelectorAll('.tablinks');
-        const tabsContent = tabsParr.querySelectorAll('.tabcontent');
+        const tabsBtn = tabsParr.querySelectorAll('.tabs__links');
+        const tabsContent = tabsParr.querySelectorAll('.tabs__content');
 
         tabsParr.addEventListener('click', (e) => {
-            if (e.target.classList.contains('tablinks')) {
+            if (e.target.classList.contains('tabs__links')) {
               const tabsPath = e.target.getAttribute('tabs-btn');
 
               tabsBtn.forEach(el => {el.classList.remove('active')});

@@ -4,11 +4,22 @@
 
 // Main page
 @import "blocks/block.scss";
+@import "blocks/categories.scss";
+@import "blocks/textblock.scss";
+
 
 // Aside
 @import "blocks/navigation.scss";
 @import "blocks/recommendation.scss";
+@import "blocks/information.scss";
+@import "blocks/feedback.scss";
 
+
+// Rules page
+@import "blocks/rules.scss";
+
+// Top pages
+@import "blocks/top-users.scss";
 
 
 

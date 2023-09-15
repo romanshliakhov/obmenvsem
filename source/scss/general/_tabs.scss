@@ -1,11 +1,42 @@
 .tabs {
 	position: relative;
-}
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
 
-.tabcontent {
-  display: none;
-
-  &.active {
+  &__controls {
     display: flex;
+    align-items: center;
+  }
+
+  &__links {
+    padding: 0 20px 10px;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--color-gray);
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &.active {
+      border-bottom: 2px solid var(--color-black);
+      color: var(--color-black);
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__btn {
+    color:  var(--color-heavy-rain);
+    pointer-events: none;
+    white-space: nowrap;
   }
 }
+
