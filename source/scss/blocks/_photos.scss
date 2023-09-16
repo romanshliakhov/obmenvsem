@@ -1,0 +1,16 @@
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 23px;
+
+  &__image {
+    display: flex;
+
+    picture,
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

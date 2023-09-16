@@ -1,7 +1,8 @@
 .breadcrumbs {
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
-  grid-gap: 18px;
+  grid-gap: 16px;
   justify-content: flex-start;
   user-select: none;
 
@@ -17,11 +18,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    grid-gap: 4px;
-    font-size: 18px;
-    line-height: 36px;
-    font-weight: 500;
-    color: #8F8F8F;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-pink);
     white-space: nowrap;
 
     &::before {
@@ -29,12 +28,15 @@
       position: absolute;
       width: 2px;
       height: 100%;
-      right: -8px;
+      right: -6px;
+      color: #CCC;
     }
   }
 
   &__current {
-    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-pink);
     white-space: nowrap;
   }
 }

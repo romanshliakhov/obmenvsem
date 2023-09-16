@@ -24,9 +24,9 @@
       color: var(--color-black);
     }
 
-    &:first-child {
-      padding-left: 0;
-    }
+    // &:first-child {
+    //   padding-left: 0;
+    // }
   }
 
   &__content {
@@ -34,6 +34,7 @@
 
     &.active {
       display: flex;
+      flex-direction: column;
     }
   }
 

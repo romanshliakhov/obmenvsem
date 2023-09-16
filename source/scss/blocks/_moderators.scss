@@ -1,0 +1,50 @@
+.moderators {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+
+  &__heading {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__list {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--color-grey);
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  &__image {
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    picture,
+    img {
+      width: 100%;
+      border-radius: 15%;
+    }
+  }
+
+  &__nickname {
+    grid-gap: 5px;
+    color: var(--color-pink);
+
+    span {
+      color: var(--color-black);
+    }
+  }
+}

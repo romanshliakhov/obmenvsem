@@ -1,0 +1,16 @@
+.online-users {
+  &__counts {
+    color: var(--color-gray-mid);
+    font-weight: 700;
+
+    span {
+      color: var(--color-black);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+}
