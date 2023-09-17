@@ -1,0 +1,31 @@
+.user-files {
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__links {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__add-file {
+    width: fit-content;
+    padding: 10px 25.5px;
+    text-transform: none;
+  }
+
+  &__add-folder {
+    width: fit-content;
+    padding: 10px 24.5px;
+    text-transform: none;
+    background-color: var(--color-yellow);
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+
+    svg {
+      stroke: currentColor;
+    }
+  }
+}
