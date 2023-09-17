@@ -113,10 +113,31 @@
                   </li>
                 </ul>
 
-                <div class="sorting">
+                <form class="sorting">
+                  <div class="sorting__head">Сортировать по дате</div>
+
+                  <div class="sorting__inner">
+                    <div class="sorting__labels">
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="day" placeholder="День">
+                      </label>
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="day" placeholder="Месяц">
+                      </label>
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="year" placeholder="Год">
+                      </label>
+                    </div>
+
+                    <button class="sorting__btn btn">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#search-icon'></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <div class="sorting__counts">Файлы <span>с 1 по 12 из 100 000</span></div>
-                </div>
+                </form>
 
                 <ul class="tabs__tabcontents">
                   <li class="tabs__content active" tabs-content="new">
