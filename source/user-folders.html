@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapp">
+            <aside class="block__aside">
+              <span>Вход</span>
+
+              <div class="navigation">
+                <span class="heading">Навигация</span>
+
+                <ul class="navigation__list">
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#chat'></use>
+                      </svg>
+                      <span class="navigation__text">Чат</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#email'></use>
+                      </svg>
+                      <span class="navigation__text">Мои письма <span>23</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#filesexchange'></use>
+                      </svg>
+                      <span class="navigation__text">Файлообменник</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#photoalbum'></use>
+                      </svg>
+                      <span class="navigation__text">Фотоальбом</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#forum'></use>
+                      </svg>
+                      <span class="navigation__text">Форум</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recommendation">
+                <span class="heading">Рекомендуем</span>
+
+                <ul class="recommendation__list">
+                  <li>
+                    <a href="#">Музыка: миллионы песен!</a>
+                  </li>
+                  <li>
+                    <a href="#">Всё видео мира + поиск!</a>
+                  </li>
+                  <li>
+                    <a href="#">Эротические рассказы!</a>
+                  </li>
+                  <li>
+                    <a href="#">XXX-Видео и Картинки!</a>
+                  </li>
+                  <li>
+                    <a href="#">Бесплатные Загрузки!</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="feedback">
+                <div class="feedback__text">Обратная связь <span>/</span><br> Для правообладателей</div>
+                <a class="feedback__email" href="mailto:abuse.obmen@gmail.com">abuse.obmen@gmail.com</a>
+                <span class="feedback__copyright">© ObmenVsem.org & SaSiSa.Org</span>
+              </div>
+            </aside>
+
+            <div class="block__content">
+              <div class="block__content-header">
+                <h1 class="block__title">Файлы пользователя <span>b@ggi</span></h1>
+              </div>
+
+              <div class="tabs">
+                <ul class="tabs__controls">
+                  <li class="tabs__links active" tabs-btn="all">
+                    <button class="tabs__btn">
+                      <span>Все файлы</span>
+                    </button>
+                  </li>
+                  <li class="tabs__links" tabs-btn="by-types">
+                    <button class="tabs__btn">
+                        <span>По типам файлов</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="user-folders">
+                  <li class="user-folders__item">
+                    <a class="user-folders__link" href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#folder-default'></use>
+                      </svg>
+                      <div class="user-folders__name">Файлы</div>
+                    </a>
+                  </li>
+                  <li class="user-folders__item">
+                    <a class="user-folders__link" href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#folder-default'></use>
+                      </svg>
+                      <div class="user-folders__name">W <span>11 файлов</span></div>
+                    </a>
+                  </li>
+                  <li class="user-folders__item">
+                    <a class="user-folders__link" href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#folder-default'></use>
+                      </svg>
+                      <div class="user-folders__name">хх <span>2 файла</span></div>
+                    </a>
+                  </li>
+                  <li class="user-folders__item">
+                    <a class="user-folders__link" href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#folder-default'></use>
+                      </svg>
+                      <div class="user-folders__name">Реп. <span>2 файла</span></div>
+                    </a>
+                  </li>
+                </ul>
+
+                <form class="sorting">
+                  <div class="sorting__head">Сортировать по дате</div>
+
+                  <div class="sorting__inner">
+                    <div class="sorting__labels">
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="day" placeholder="День">
+                      </label>
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="day" placeholder="Месяц">
+                      </label>
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="year" placeholder="Год">
+                      </label>
+                    </div>
+
+                    <button class="sorting__btn btn">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#search-icon'></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+
+                <ul class="tabs__tabcontents">
+                  <li class="tabs__content active" tabs-content="all">
+
+                    <ul class="musics">
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music1.webp'>
+                              <img width='73' height='73' src='img/musics/music1.png' alt='Music 1'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">Bingo Players Stadiumx feat Gemaine - Good Times ( 2023 ).mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music2.webp'>
+                              <img width='73' height='73' src='img/musics/music2.png' alt='Music 2'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">Benassi Bros feat Dhany - Every Single Day - (G Love Igor Frank Remix) MZ music.mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music3.webp'>
+                              <img width='73' height='73' src='img/musics/music3.png' alt='Music 3'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">SBORNIK-MELODII I RITMY I RITMY ZARUBEZhNOJ XSTRADY (1988).mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music3.webp'>
+                              <img width='73' height='73' src='img/musics/music3.png' alt='Music 3'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">SBORNIK-MELODII I RITMY I RITMY ZARUBEZhNOJ XSTRADY (1988).mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music2.webp'>
+                              <img width='73' height='73' src='img/musics/music2.png' alt='Music 2'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">Benassi Bros feat Dhany - Every Single Day - (G Love Igor Frank Remix) MZ music.mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music3.webp'>
+                              <img width='73' height='73' src='img/musics/music3.png' alt='Music 3'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">Video Kids-Communication Outerspace.mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <button class="show-more">Показать еще</button>
+
+                    <div class="pagination">
+                      <a class="pagination__nav pagination__nav--prev" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#pagination-left'></use>
+                        </svg>
+                      </a>
+
+                      <ul class="pagination__list">
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">1</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link active" href="#">2</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">3</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">4</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <span>...</span>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">25</a>
+                        </li>
+                      </ul>
+
+                      <a class="pagination__nav pagination__nav--next" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#pagination-right'></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="tabs__content" tabs-content="by-types">
+                    <ul class="musics">
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music1.webp'>
+                              <img width='73' height='73' src='img/musics/music1.png' alt='Music 1'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">Bingo Players Stadiumx feat Gemaine - Good Times ( 2023 ).mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music2.webp'>
+                              <img width='73' height='73' src='img/musics/music2.png' alt='Music 2'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">Benassi Bros feat Dhany - Every Single Day - (G Love Igor Frank Remix) MZ music.mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="musics__item">
+                        <div class="music">
+                          <div class="music__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/musics/music3.webp'>
+                              <img width='73' height='73' src='img/musics/music3.png' alt='Music 3'>
+                            </picture>
+                          </div>
+
+                          <div class="music__info">
+                            <a class="music__title" href="/music.html">SBORNIK-MELODII I RITMY I RITMY ZARUBEZhNOJ XSTRADY (1988).mp3</a>
+
+                            <ul class="music__bot">
+                              <li>
+                                <span class="music__duration">02:51</span>
+                              </li>
+                              <li>
+                                <span class="music__bitrate">320kbps</span>
+                              </li>
+                              <li>
+                                <span class="music__downloads">35 скач.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <button class="show-more">Показать еще</button>
+
+                    <div class="pagination">
+                      <a class="pagination__nav pagination__nav--prev" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#pagination-left'></use>
+                        </svg>
+                      </a>
+
+                      <ul class="pagination__list">
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">1</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link active" href="#">2</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">3</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">4</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <span>...</span>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">25</a>
+                        </li>
+                      </ul>
+                      <a class="pagination__nav pagination__nav--next" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#pagination-right'></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include('partials/footer.html',{}) -->
+    <!-- @include('partials/modals.html',{}) -->
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.user-folders {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+
+    span {
+      color: var(--color-gray);
+    }
+  }
+}

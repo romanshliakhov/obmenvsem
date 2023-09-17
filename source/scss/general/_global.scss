@@ -6,7 +6,7 @@ body {
   width: 100%;
   font-family: var(--font-family-gotham);
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: 500;
   color: var(--color-black);
 }
@@ -22,23 +22,6 @@ html {
 *::before {
   box-sizing: border-box;
 }
-
-// * {
-//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-// }
-
-// *::-webkit-scrollbar {
-//   width: 5px;
-// }
-
-// *::-webkit-scrollbar-track {
-//   background: transparent;
-// }
-
-// *::-webkit-scrollbar-thumb {
-//   background-color: var(--color-scroll);
-//   border-radius: 11px;
-// }
 
 a {
   display: inline-flex;

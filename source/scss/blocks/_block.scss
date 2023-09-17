@@ -1,6 +1,12 @@
 .block {
   padding-bottom: 43px;
 
+  &__title {
+    span {
+      color: var(--color-pink);
+    }
+  }
+
   &__wrapp {
     display: grid;
     grid-template-columns: 240px 1fr;

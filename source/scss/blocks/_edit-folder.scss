@@ -1,0 +1,54 @@
+.edit-folder {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 14px;
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__labels {
+    max-width: 506px;
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+  }
+
+  &__naming {
+    max-width: 295px;
+    width: 100%;
+  }
+
+  &__order {
+    max-width: 197px;
+    width: 100%;
+  }
+
+  &__input {
+    padding: 10px 18px;
+    border: 1px solid var(--color-black);
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-black);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__save {
+    width: fit-content;
+    padding: 10px 22.5px;
+  }
+
+  &__delete {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    color: var(--color-red);
+  }
+}
