@@ -1,0 +1,16 @@
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px 16px;
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+
+    &__title {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.music {
+  display: flex;
+  flex-direction: column;
+
+  &__preview {
+    display: flex;
+  }
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    grid-gap: 18px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-gray);
+  }
+}

@@ -113,85 +113,207 @@
                   </li>
                 </ul>
 
-                <div class="sorting">
+                <form class="sorting">
+                  <div class="sorting__head">Сортировать по дате</div>
+
+                  <div class="sorting__inner">
+                    <div class="sorting__labels">
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="day" placeholder="День">
+                      </label>
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="day" placeholder="Месяц">
+                      </label>
+                      <label class="sorting__label">
+                        <input class="sorting__input" type="text" name="year" placeholder="Год">
+                      </label>
+                    </div>
+
+                    <button class="sorting__btn btn">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#search-icon'></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <div class="sorting__counts">Файлы <span>с 1 по 12 из 100 000</span></div>
-                </div>
+                </form>
 
                 <ul class="tabs__tabcontents">
                   <li class="tabs__content active" tabs-content="new">
 
-                    <ul class="photos">
+                    <ul class="videos">
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls1.webp'>
-                            <img width='278' height='278' src='img/photos/girls1.png' alt='girls1'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video1.webp'>
+                              <img width='283' height='189' src='img/videos/video1.png' alt='video 1'>
+                            </picture>
+
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls2.webp'>
-                            <img width='278' height='278' src='img/photos/girls2.png' alt='girls2'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video2.webp'>
+                              <img width='283' height='189' src='img/videos/video2.png' alt='video 2'>
+                            </picture>
+
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls3.webp'>
-                            <img width='278' height='278' src='img/photos/girls3.png' alt='girls3'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video3.webp'>
+                              <img width='283' height='189' src='img/videos/video3.png' alt='video 3'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls4.webp'>
-                            <img width='278' height='278' src='img/photos/girls4.png' alt='girls4'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video4.webp'>
+                              <img width='283' height='189' src='img/videos/video4.png' alt='video 4'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls5.webp'>
-                            <img width='278' height='278' src='img/photos/girls5.png' alt='girls5'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video5.webp'>
+                              <img width='283' height='189' src='img/videos/video5.png' alt='video 5'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls6.webp'>
-                            <img width='278' height='278' src='img/photos/girls6.png' alt='girls6'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video6.webp'>
+                              <img width='283' height='189' src='img/videos/video6.png' alt='video 6'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls7.webp'>
-                            <img width='278' height='278' src='img/photos/girls7.png' alt='girls7'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video2.webp'>
+                              <img width='283' height='189' src='img/videos/video2.png' alt='video 2'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls8.webp'>
-                            <img width='278' height='278' src='img/photos/girls8.png' alt='girls8'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video3.webp'>
+                              <img width='283' height='189' src='img/videos/video3.png' alt='video 3'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls9.webp'>
-                            <img width='278' height='278' src='img/photos/girls9.png' alt='girls9'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video1.webp'>
+                              <img width='283' height='189' src='img/videos/video1.png' alt='video 1'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                     </ul>
@@ -235,101 +357,62 @@
                   </li>
 
                   <li class="tabs__content" tabs-content="popular">
-                    <ul class="photos">
+                    <ul class="videos">
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls1.webp'>
-                            <img width='278' height='278' src='img/photos/girls1.png' alt='girls1'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video1.webp'>
+                              <img width='283' height='189' src='img/videos/video1.png' alt='video 1'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls2.webp'>
-                            <img width='278' height='278' src='img/photos/girls2.png' alt='girls2'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video2.webp'>
+                              <img width='283' height='189' src='img/videos/video2.png' alt='video 2'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                       <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls3.webp'>
-                            <img width='278' height='278' src='img/photos/girls3.png' alt='girls3'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls4.webp'>
-                            <img width='278' height='278' src='img/photos/girls4.png' alt='girls4'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls5.webp'>
-                            <img width='278' height='278' src='img/photos/girls5.png' alt='girls5'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls6.webp'>
-                            <img width='278' height='278' src='img/photos/girls6.png' alt='girls6'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls7.webp'>
-                            <img width='278' height='278' src='img/photos/girls7.png' alt='girls7'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls8.webp'>
-                            <img width='278' height='278' src='img/photos/girls8.png' alt='girls8'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls9.webp'>
-                            <img width='278' height='278' src='img/photos/girls9.png' alt='girls9'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls1.webp'>
-                            <img width='278' height='278' src='img/photos/girls1.png' alt='girls1'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls2.webp'>
-                            <img width='278' height='278' src='img/photos/girls2.png' alt='girls2'>
-                          </picture>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="photos__image">
-                          <picture>
-                            <source type='image/webp' srcset='img/photos/girls3.webp'>
-                            <img width='278' height='278' src='img/photos/girls3.png' alt='girls3'>
-                          </picture>
+                        <div class="video">
+                          <div class="video__preview">
+                            <picture>
+                              <source type='image/webp' srcset='img/videos/video3.webp'>
+                              <img width='283' height='189' src='img/videos/video3.png' alt='video 3'>
+                            </picture>
+                            <div class="video__resolution">HD 1280x720</div>
+                            <div class="video__duration">05:48</div>
+                          </div>
+
+                          <a class="video__title" href="/video.html">Моменты в автоспорте от которых мурашки по коже 4255.mp4</a>
+
+                          <div class="video__bottom">
+                            <div class="video__views">370 просмотров</div>
+                            <div class="video__pubtime">1 год назад</div>
+                          </div>
                         </div>
                       </li>
                     </ul>

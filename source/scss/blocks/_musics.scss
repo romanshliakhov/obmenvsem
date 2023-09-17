@@ -1,0 +1,31 @@
+.musics {
+  &__item {
+    position: relative;
+    counter-increment: list;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-grey);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  .music {
+    flex-direction: row;
+    align-items: stretch;
+    grid-gap: 12px;
+
+    &__title {
+      max-width: 438px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+  }
+}

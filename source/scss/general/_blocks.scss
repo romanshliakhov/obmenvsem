@@ -2,27 +2,38 @@
 @import "blocks/footer.scss";
 @import "blocks/mobile.scss";
 
-// Main page
-@import "blocks/block.scss";
-@import "blocks/categories.scss";
-@import "blocks/textblock.scss";
-
-// Photos page
-@import "blocks/photos.scss";
-
 // Aside
 @import "blocks/navigation.scss";
 @import "blocks/recommendation.scss";
 @import "blocks/information.scss";
 @import "blocks/feedback.scss";
 
-
-// Rules page
-@import "blocks/rules.scss";
+// Main page
+@import "blocks/block.scss";
+@import "blocks/categories.scss";
+@import "blocks/textblock.scss";
 
 // Top pages
 @import "blocks/top-users.scss";
 @import "blocks/top-files.scss";
+
+// Photos page
+@import "blocks/photos.scss";
+
+// Videos page
+@import "blocks/videos.scss";
+
+// Video page
+@import "blocks/video.scss";
+
+// Musics page
+@import "blocks/musics.scss";
+
+// Music page
+@import "blocks/music.scss";
+
+// Rules page
+@import "blocks/rules.scss";
 
 // Online-users page
 @import "blocks/online-users.scss";
