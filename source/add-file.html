@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapp">
+            <aside class="block__aside">
+              <span>Вход</span>
+
+              <div class="navigation">
+                <span class="heading">Навигация</span>
+
+                <ul class="navigation__list">
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#chat'></use>
+                      </svg>
+                      <span class="navigation__text">Чат</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#email'></use>
+                      </svg>
+                      <span class="navigation__text">Мои письма <span>23</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#filesexchange'></use>
+                      </svg>
+                      <span class="navigation__text">Файлообменник</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#photoalbum'></use>
+                      </svg>
+                      <span class="navigation__text">Фотоальбом</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#forum'></use>
+                      </svg>
+                      <span class="navigation__text">Форум</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recommendation">
+                <span class="heading">Рекомендуем</span>
+
+                <ul class="recommendation__list">
+                  <li>
+                    <a href="#">Музыка: миллионы песен!</a>
+                  </li>
+                  <li>
+                    <a href="#">Всё видео мира + поиск!</a>
+                  </li>
+                  <li>
+                    <a href="#">Эротические рассказы!</a>
+                  </li>
+                  <li>
+                    <a href="#">XXX-Видео и Картинки!</a>
+                  </li>
+                  <li>
+                    <a href="#">Бесплатные Загрузки!</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="feedback">
+                <div class="feedback__text">Обратная связь <span>/</span><br> Для правообладателей</div>
+                <a class="feedback__email" href="mailto:abuse.obmen@gmail.com">abuse.obmen@gmail.com</a>
+                <span class="feedback__copyright">© ObmenVsem.org & SaSiSa.Org</span>
+              </div>
+            </aside>
+
+            <div class="add-file">
+              <h1 class="add-file__title">Добавить файл</h1>
+
+              <div class="add-file__rules" data-spollers>
+                <div class="add-file__rules-trigger _active" tabindex="-1" type="button" data-spoller>
+                  <span>Правила загрузки</span>
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-down'></use>
+                  </svg>
+                </div>
+
+                <div class="add-file__rules-descr">
+                  <span>*</span> - Файлы больше 5 мб, залиты более 60 дней назад, за последние 15 дней не имея скачек (0) будут удалены*.
+                </div>
+
+                <div class="add-file__rules-alert">
+                  <span class="add-file__attention">Файл <span>не более 300 Mb!</span></span>
+                  <a class="add-file__types" href="#">Типы файлов?</a>
+                </div>
+              </div>
+
+              <form class="add-file__form">
+                <fieldset class="add-file__uploads">
+                  <label class="add-file__upload">
+                    <input name="file-upload" type="file">
+
+                    <span class="add-file__upload-trigger">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#clip'></use>
+                      </svg>
+
+                      <span>Выберите файл</span>
+                    </span>
+                  </label>
+
+                  <span class="add-file__upload-box">
+                    <span>Файл не выбран</span>
+                  </span>
+                </fieldset>
+
+                <fieldset class="add-file__18plus">
+                  <label>
+                    <input class="add-file__18plus-checkbox" name="18plus" type="checkbox">
+                    <span>Файл для взрослых 18+</span>
+                  </label>
+                </fieldset>
+
+                <fieldset class="add-file__description">
+                  <span class="add-file__description-heading">Описание файла <span>до 10000 знаков</span></span>
+
+                  <textarea class="add-file__textarea" name="file-description" placeholder="Содержание файла, подробности"></textarea>
+                </fieldset>
+
+                <fieldset class="add-file__comments">
+                  <span class="add-file__comments-heading">Кто может комментировать</span>
+
+                  <div class="add-file__comments-variants">
+                    <label class="add-file__comments-variant">
+                      <input class="add-file__radio" type="radio" name="file-comments">
+                      <span>Все</span>
+                    </label>
+                    <label class="add-file__comments-variant">
+                      <input class="add-file__radio" type="radio" name="file-comments" checked>
+                      <span>Друзья</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <button class="add-file__btn btn">Загрузить</button>
+              </form>
+
+              <div class="add-file__limits">
+                <b>Лимиты на загрузку в день</b>
+
+                <p>Сегодня вы можете загрузить <span>100 файлов</span> или <span>1 Gb данных.</span></p>
+                <p>Лимит на загрузку будет сброшен через <span>13ч. 1мин.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include('partials/footer.html',{}) -->
+    <!-- @include('partials/modals.html',{}) -->
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
