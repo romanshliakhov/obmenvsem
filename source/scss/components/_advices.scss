@@ -1,0 +1,11 @@
+.advices {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  &__head {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+}

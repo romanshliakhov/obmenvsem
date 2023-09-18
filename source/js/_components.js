@@ -3,6 +3,7 @@
 // import './components/resultChange.js';
 import './components/select.js';
 import './components/burger.js';
+import './components/video.js';
 
 import './components/spollers.js';
 import './components/tabs.js';

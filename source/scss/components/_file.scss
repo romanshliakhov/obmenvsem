@@ -37,4 +37,99 @@
     line-height: 18px;
     color: var(--color-gray-mid);
   }
+
+  &__uploadtime {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-black);
+  }
+
+  &__details {
+    margin-bottom: 28px;
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--color-grey);
+    }
+
+    .file__downloads {
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-black);
+    }
+  }
+
+  &__details-head {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-gray);
+  }
+
+  &__folders {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+  }
+
+  &__folders-list {
+    display: flex;
+    align-items: center;
+    grid-gap: 17px;
+
+    li {
+      position: relative;
+      padding: 0;
+      border: 0;
+
+      &::before {
+        content: "/";
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        left: -12px;
+        color: #CCC;
+      }
+
+      &:first-child::before {
+        display: none;
+      }
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    grid-gap: 11px;
+  }
+
+  &__author-link {
+    color: var(--color-pink);
+  }
+
+  &__download-types {
+    margin-bottom: 34px;
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--color-grey);
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__download-link {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 3px;
+    color: var(--color-pink);
+  }
 }

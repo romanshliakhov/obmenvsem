@@ -1,0 +1,28 @@
+.comment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  grid-gap: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 6px;
+  }
+
+  &__username {
+    color: var(--color-pink);
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__pubtime {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-gray);
+  }
+}

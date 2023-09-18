@@ -16,27 +16,26 @@
     flex-direction: column;
     grid-gap: 8px;
 
+    @media (max-width: 576px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
     &__title {
+      margin-bottom: 0;
       font-size: 14px;
       line-height: 18px;
     }
   }
 
-  &.row {
+  &.column {
     .video {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .video__info {
-      grid-gap: 8px;
+      flex-direction: column;
     }
 
     .video__bottom {
-      flex-direction: column;
-      align-items: flex-start;
-      grid-gap: 4px;
+      flex-direction: row;
+      grid-gap: 18px;
     }
   }
 }
