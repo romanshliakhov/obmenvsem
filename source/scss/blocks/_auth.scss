@@ -1,0 +1,77 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 17px;
+
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+  }
+
+  &__label {
+    input {
+      padding: 11px 20px 11px;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      transition: all 0.4s ease-in-out;
+
+      &::placeholder {
+        color: var(--color-gray);
+      }
+
+      &:focus {
+        border: 1px solid var(--color-black);
+      }
+    }
+
+    span {
+      display: block;
+      margin-bottom: 5px;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--color-gray-mid);
+    }
+
+    p {
+      display: block;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      font-size: 12px;
+      line-height: 14px;
+      color: var(--color-gray);
+    }
+  }
+
+  &__forgot {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-pink);
+  }
+
+  &__btn {
+    margin-top: 17px;
+    text-transform: capitalize;
+  }
+
+  &__confirm {
+    display: block;
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-gray-mid);
+
+    a {
+      display: initial;
+      color: var(--color-pink);
+    }
+  }
+
+  &__remind-heading {
+    display: block;
+    margin-bottom: 17px;
+    font-weight: 700;
+  }
+}

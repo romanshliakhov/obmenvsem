@@ -11,7 +11,149 @@
         <div class="container">
           <div class="block__wrapp">
             <aside class="block__aside">
-              <span>Вход</span>
+              <form class="auth tabs">
+                <ul class="tabs__controls">
+                  <li class="tabs__links active" tabs-btn="login">
+                    <button class="tabs__btn">
+                      <span>Вход</span>
+                    </button>
+                  </li>
+                  <li class="tabs__links" tabs-btn="registration">
+                    <button class="tabs__btn">
+                      <span>Регистрация</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="tabs__tabcontents">
+                  <li class="tabs__content active" tabs-content="login">
+                    <fieldset class="auth__labels">
+                      <label class="auth__label">
+                        <input type="text" name="login" placeholder="Логин или ID" required>
+                      </label>
+
+                      <label class="auth__label">
+                        <input type="password" name="password" placeholder="Пароль" required>
+                      </label>
+                    </fieldset>
+
+                    <a class="auth__forgot" href="/forgot.html">Забыли пароль?</a>
+
+                    <button class="auth__btn btn">Войти</button>
+                  </li>
+
+                  <li class="tabs__content" tabs-content="registration">
+                    <fieldset class="auth__labels">
+                      <label class="auth__label">
+                        <span>Логин (никнейм)</span>
+                        <input type="text" name="login" placeholder="Логин или ID" required>
+                      </label>
+
+                      <label class="auth__label">
+                        <span>Пароль</span>
+                        <p>В пароле разрешены только латинские буквы и цифры</p>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                      </label>
+
+                      <label class="auth__label">
+                        <span>Email (необязательно)</span>
+                        <input type="email" name="email" placeholder="Email">
+                      </label>
+                    </fieldset>
+
+                    <span class="auth__confirm">Нажимая кнопку «Регистрация» вы соглашаетесь с <a
+                        href="/rules.html">правилами проекта.</a></span>
+
+                    <button class="auth__btn btn">Регистрация</button>
+                  </li>
+                </ul>
+
+                <div class="socials">
+                  <span class="socials__head">или через соц. сети</span>
+
+                  <ul class="socials__list">
+                    <li>
+                      <a class="auth__alternate-link" href="#">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#vk'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="auth__alternate-link" href="#">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#odnoklassniki'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="auth__alternate-link" href="#">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#mail'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="auth__alternate-link" href="#">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#facebook'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="socials__more">
+                        <div class="socials__more-trigger">
+                          <svg width='40' height='40'>
+                            <use href='img/sprite/sprite.svg#auth-more'></use>
+                          </svg>
+                        </div>
+
+                        <ul class="socials__more-links">
+                          <li>
+                            <a href="#">
+                              <svg width='40' height='40'>
+                                <use href='img/sprite/sprite.svg#twitter'></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width='40' height='40'>
+                                <use href='img/sprite/sprite.svg#yandex'></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width='40' height='40'>
+                                <use href='img/sprite/sprite.svg#google'></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="2.13281" y="2.13257" width="35.7347" height="35.7347" rx="9.5"
+                                  stroke="#005CA5" />
+                                <rect x="10" y="13" width="20" height="14" fill="url(#pattern0)" />
+                                <defs>
+                                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_133_8388"
+                                      transform="matrix(0.0140845 0 0 0.0208333 -0.605634 0)" />
+                                  </pattern>
+                                  <image id="image0_133_8388" width="154" height="48"
+                                    xlink:href="data:image/png;base64,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" />
+                                </defs>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
 
               <div class="navigation">
                 <span class="heading">Навигация</span>
@@ -143,7 +285,7 @@
                     </li>
                     <li class="tabs__links" tabs-btn="by-files">
                       <button class="tabs__btn">
-                          <span>По типам файлов</span>
+                        <span>По типам файлов</span>
                       </button>
                     </li>
                   </ul>
@@ -197,7 +339,8 @@
                               <use href='img/sprite/sprite.svg#creation'></use>
                             </svg>
 
-                            <div class="categories__link-title">Творчество обитателей <span><span>1 097</span> файлов</span></div>
+                            <div class="categories__link-title">Творчество обитателей <span><span>1 097</span>
+                                файлов</span></div>
                           </a>
                         </li>
 
@@ -277,7 +420,8 @@
                               <use href='img/sprite/sprite.svg#docs'></use>
                             </svg>
 
-                            <div class="categories__link-title">Статьи, Документы <span><span>1 509</span> файлов</span></div>
+                            <div class="categories__link-title">Статьи, Документы <span><span>1 509</span> файлов</span>
+                            </div>
                           </a>
                         </li>
 
@@ -287,7 +431,8 @@
                               <use href='img/sprite/sprite.svg#flash'></use>
                             </svg>
 
-                            <div class="categories__link-title">Флеш (Flash) <span><span>1 509</span> файлов</span></div>
+                            <div class="categories__link-title">Флеш (Flash) <span><span>1 509</span> файлов</span>
+                            </div>
                           </a>
                         </li>
 
@@ -354,7 +499,12 @@
               <div class="textblock">
                 <h1 class="textblock__title title">Файлообменник</h1>
 
-                <p class="textblock__text">Удобный мобильный WAP файлообменник позволит Вам скачать и загрузить свой файл из телефона и поделиться им с вашими друзьями. Закачайте ваш собственный файл и получите на него прямую ссылку. Кроме того, файл отобразится в самом файлообменнике и станет доступен для любого пользователя. Для загрузки файла в интернет с телефона, необходимо быть зарегистрированным на мобильном портале ObmenVsem.org. Загружайте, скачивайте, делитесь абсолютно любыми файлами, используя наш файлообменник для телефонов. Это новый адрес для бывшего обменника sasisa.org</p>
+                <p class="textblock__text">Удобный мобильный WAP файлообменник позволит Вам скачать и загрузить свой
+                  файл из телефона и поделиться им с вашими друзьями. Закачайте ваш собственный файл и получите на него
+                  прямую ссылку. Кроме того, файл отобразится в самом файлообменнике и станет доступен для любого
+                  пользователя. Для загрузки файла в интернет с телефона, необходимо быть зарегистрированным на
+                  мобильном портале ObmenVsem.org. Загружайте, скачивайте, делитесь абсолютно любыми файлами, используя
+                  наш файлообменник для телефонов. Это новый адрес для бывшего обменника sasisa.org</p>
               </div>
             </div>
           </div>

@@ -1,5 +1,45 @@
 .socials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4px 9px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
+
+  &__head {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-gray);
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+  }
+
+  &__more-trigger {
+    cursor: pointer;
+  }
+
+  &__more-links {
+    position: absolute;
+    padding: 11px 12px 12px;
+    margin-top: 8px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    border-radius: 12px;
+    background-color: var(--color-white);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.10);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 5;
+    }
+  }
 }
