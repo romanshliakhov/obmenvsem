@@ -4,6 +4,10 @@
   align-items: flex-start;
   grid-gap: 10px;
 
+  @media (max-width: 576px) {
+    grid-gap: 8px;
+  }
+
   &__text {
     font-size: 14px;
     line-height: 18px;
@@ -25,6 +29,10 @@
     line-height: 20px;
     font-weight: 700;
     color: var(--color-pink);
+
+    @media (max-width: 576px) {
+      margin-bottom: 12px;
+    }
   }
 
   &__copyright {

@@ -24,9 +24,11 @@
       color: var(--color-black);
     }
 
-    // &:first-child {
-    //   padding-left: 0;
-    // }
+    @media (max-width: 576px) {
+      width: 100%;
+      padding: 0 0 10px;
+      text-align: center;
+    }
   }
 
   &__content {

@@ -129,10 +129,10 @@
   }
 
   &__content-header {
-    margin-bottom: 30px;
+    margin-bottom: clamp(20px, 2.4vw, 30px);
     display: flex;
     flex-direction: column;
-    grid-gap: 16px;
+    grid-gap: clamp(12px, 1.28vw, 16px);
 
     p {
       max-width: 592px;

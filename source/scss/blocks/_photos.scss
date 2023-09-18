@@ -1,7 +1,11 @@
 .photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 23px;
+  grid-gap: clamp(12px, 1.84vw, 23px);
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &__image {
     display: flex;

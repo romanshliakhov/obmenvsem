@@ -8,12 +8,20 @@
     display: flex;
     align-items: center;
     grid-gap: 10px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
   &__add-file {
     width: fit-content;
     padding: 10px 25.5px;
     text-transform: none;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
 
   &__add-folder {
@@ -26,6 +34,10 @@
 
     svg {
       stroke: currentColor;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
     }
   }
 }

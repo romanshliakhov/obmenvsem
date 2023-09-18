@@ -1,5 +1,12 @@
 .header {
-  padding: clamp(13px, 1.6vw, 20px) 0 clamp(16px, 2vw, 25px);
+  padding: clamp(13px, 1.6vw, 20px) 0 clamp(17px, 2vw, 25px);
+
+  &--line {
+    @media (max-width: 576px) {
+      margin-bottom: 14px;
+      border-bottom: 2px solid var(--color-black);
+    }
+  }
 
   &__wrapp {
     display: flex;

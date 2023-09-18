@@ -4,6 +4,9 @@
 
   &__preview {
     display: flex;
+    width: 73px;
+    height: 73px;
+    flex-shrink: 0;
   }
 
   &__bot {

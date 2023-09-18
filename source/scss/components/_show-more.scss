@@ -1,7 +1,14 @@
 .show-more {
-  margin: 44px auto 0;
+  margin: clamp(28px, 3.52vw, 44px) auto 0;
   padding: 10px 26px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-grey);
   border-radius: 50px;
   font-weight: 700;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }

@@ -1,7 +1,15 @@
 .videos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 28px 16px;
+  grid-gap: clamp(20px, 2.08vw, 26px) 16px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 100%;
+  }
 
   .video {
     display: flex;
@@ -11,6 +19,24 @@
     &__title {
       font-size: 14px;
       line-height: 18px;
+    }
+  }
+
+  &.row {
+    .video {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .video__info {
+      grid-gap: 8px;
+    }
+
+    .video__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 4px;
     }
   }
 }

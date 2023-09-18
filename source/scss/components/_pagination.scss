@@ -5,6 +5,11 @@
   justify-content: center;
   grid-gap: 25px;
 
+  @media (max-width: 576px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -33,13 +38,6 @@
       border: 1px solid var(--color-pink);
     }
   }
-
-  // Визуальное отображение кнопок пагинации
-  // &__list-item:nth-child(4) {
-  //   @media (max-width: 576px) {
-  //     display: none;
-  //   }
-  // }
 
   &__nav {
     display: flex;

@@ -5,8 +5,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: var(--font-family-gotham);
-  font-size: clamp(14px, 1.28vw, 16px);
-  line-height: clamp(16px, 1.44vw, 18px);
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   color: var(--color-black);
 }

@@ -4,6 +4,8 @@
   }
 
   p {
+    font-size: clamp(14px, 1.28vw, 16px);
+    line-height: clamp(16px, 1.44vw, 18px);
     color: var(--color-gray-mid);
   }
 }

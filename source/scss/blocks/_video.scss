@@ -3,6 +3,16 @@
     position: relative;
     display: flex;
 
+    picture,
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
   }
 
   &__duration,

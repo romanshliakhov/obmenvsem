@@ -1,6 +1,6 @@
 h1 {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: clamp(20px, 2.56vw, 32px);
+  line-height: clamp(24px, 3.04vw, 38px);
   font-weight: 700;
 }
 

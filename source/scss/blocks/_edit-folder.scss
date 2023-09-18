@@ -12,16 +12,28 @@
     display: flex;
     align-items: center;
     grid-gap: 14px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
   &__naming {
     max-width: 295px;
     width: 100%;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 
   &__order {
     max-width: 197px;
     width: 100%;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 
   &__input {
@@ -38,11 +50,19 @@
     display: flex;
     align-items: center;
     grid-gap: 20px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
   &__save {
     width: fit-content;
     padding: 10px 22.5px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
 
   &__delete {
