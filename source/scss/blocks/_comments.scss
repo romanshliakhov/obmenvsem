@@ -1,5 +1,5 @@
 .comments {
-  margin-bottom: 46px;
+  margin-bottom: clamp(36px, 4.492vw, 46px);
 
   &__heading {
     margin-bottom: 16px;

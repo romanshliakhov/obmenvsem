@@ -567,8 +567,8 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-big-play-button {
-  width: 60px;
-  height: 60px;
+  width: clamp(44px, 4.8vw, 60px);
+  height: clamp(44px, 4.8vw, 60px);
   border-radius: 50%;
 	display: block;
 	position: absolute;
@@ -1315,7 +1315,7 @@ body.vjs-full-window {
 	display: inline-block;
 	vertical-align: middle;
 	background-repeat: no-repeat;
-	background-position: 100% 100%;
+	background-position: center;
 	background-size: cover;
 	background-color: #000;
 	cursor: pointer;

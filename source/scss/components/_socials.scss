@@ -7,6 +7,10 @@
     font-size: 14px;
     line-height: 18px;
     color: var(--color-gray);
+
+    span {
+      color: var(--color-pink);
+    }
   }
 
   &__list {

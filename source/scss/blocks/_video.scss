@@ -10,7 +10,7 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: clamp(17px, 1.953vw, 20px);
   }
 
   &__info {
@@ -57,9 +57,9 @@
   }
 
   &__file {
-    margin-bottom: 26px;
+    margin-bottom: clamp(17px, 2.539vw, 26px);
     display: flex;
-    height: 497px;
+    height: clamp(185px, 48.535vw, 497px);
     width: 100%;
     object-fit: cover;
   }

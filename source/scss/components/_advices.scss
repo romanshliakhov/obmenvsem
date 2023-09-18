@@ -4,8 +4,8 @@
   grid-gap: 20px;
 
   &__head {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: clamp(20px, 2.344vw, 24px);
+    line-height: clamp(24px, 2.734vw, 28px);
     font-weight: 700;
   }
 }

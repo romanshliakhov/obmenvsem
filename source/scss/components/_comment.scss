@@ -1,13 +1,13 @@
 .comment {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  grid-gap: 20px;
+  flex-direction: column;
+  grid-gap: 6px;
 
-  &__info {
+  &__head {
     display: flex;
-    flex-direction: column;
-    grid-gap: 6px;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
   }
 
   &__username {

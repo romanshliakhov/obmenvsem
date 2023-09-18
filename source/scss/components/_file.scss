@@ -45,11 +45,20 @@
   }
 
   &__details {
-    margin-bottom: 28px;
+    margin-bottom: clamp(15px, 2.734vw, 28px);
 
     li {
       padding: 8px 0;
       border-bottom: 1px solid var(--color-grey);
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
     }
 
     .file__downloads {
@@ -109,7 +118,7 @@
   }
 
   &__download-types {
-    margin-bottom: 34px;
+    margin-bottom: clamp(25px, 3.32vw, 34px);
 
     li {
       padding: 8px 0;
@@ -131,5 +140,13 @@
     align-items: center;
     grid-gap: 3px;
     color: var(--color-pink);
+
+    @media (max-width: 576px) {
+      display: flex;
+    }
+  }
+
+  &__manage {
+    margin-bottom: 38px;
   }
 }
