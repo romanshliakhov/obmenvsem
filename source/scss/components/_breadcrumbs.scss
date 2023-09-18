@@ -6,14 +6,6 @@
   justify-content: flex-start;
   user-select: none;
 
-  @media (max-width: 992px) {
-    overflow-x: scroll;
-  }
-
-  @media (max-width: 769px) {
-    display: inline-block;
-  }
-
   &__prev {
     position: relative;
     display: flex;

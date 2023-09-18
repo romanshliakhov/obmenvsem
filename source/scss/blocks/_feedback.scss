@@ -12,6 +12,12 @@
     span {
       color: #CCC;
     }
+
+    @media (max-width: 992px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__email {

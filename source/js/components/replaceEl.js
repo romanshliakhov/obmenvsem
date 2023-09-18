@@ -9,24 +9,21 @@ let replaceSettings = {
 }
 
 let elementName = {
-  headerNav: '.header__nav',
-  headerNavDesktop: '.header__inner',
-  headerNavMobile: '.mobile__menu',
+  asideMenu: '.block__aside',
+  asideMenuDesktop: '.block__wrapp',
+  asideMenuMobile: '.mobile',
 
-  heroContacts: '.header__contacts',
-  heroContactsDesktop: '.header__panel',
-  heroContactsMobile: '.mobile__menu',
+  recommendationAside: '.recommendation',
+  recommendationAsideDesktop: '.navigation',
+  recommendationAsideMobile: '.block__wrapp',
 
-  heroBtn: '.hero__btn',
-  heroBtnDesktop: '.hero__descr',
-  heroBtnMobile: '.hero__wrapp',
 
-  resultsBtn: '.results__more',
-  resultsBtnDesktop: '.results__details',
-  resultsBtnMobile: '.results__inner',
+  feedbackAside: '.feedback',
+  feedbackAsideDesktop: '.block__aside',
+  feedbackAsideMobile: '.block__wrapp',
 }
 
-let items = [...document.querySelectorAll('.container')];
+let items = [...document.querySelectorAll('.wrapper')];
 
 const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobileSetting, desktopSetting, breakpointSetting) => {
   let containerWidth = document.documentElement.clientWidth;
@@ -47,22 +44,17 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 }
 
 window.addEventListener('resize', () => {
-  replaceElements(items, elementName.headerNav, elementName.headerNavDesktop, elementName.headerNavMobile, replaceSettings.beforeend, replaceSettings.afterbegin, replaceSettings.tablet);
+  replaceElements(items, elementName.asideMenu, elementName.asideMenuDesktop, elementName.asideMenuMobile, replaceSettings.beforeend, replaceSettings.afterbegin, replaceSettings.tablet);
 
-  replaceElements(items, elementName.heroContacts, elementName.heroContactsDesktop, elementName.heroContactsMobile, replaceSettings.beforeend, replaceSettings.afterend, replaceSettings.tablet);
+  replaceElements(items, elementName.recommendationAside, elementName.recommendationAsideDesktop, elementName.recommendationAsideMobile, replaceSettings.beforeend, replaceSettings.afterend, replaceSettings.tablet);
 
-  replaceElements(items, elementName.heroBtn, elementName.heroBtnDesktop, elementName.heroBtnMobile, replaceSettings.beforeend, replaceSettings.afterend, replaceSettings.mobile);
-
-  replaceElements(items, elementName.resultsBtn, elementName.resultsBtnDesktop, elementName.resultsBtnMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.tablet);
+  replaceElements(items, elementName.feedbackAside, elementName.feedbackAsideDesktop, elementName.feedbackAsideMobile, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  replaceElements(items, elementName.headerNav, elementName.headerNavDesktop, elementName.headerNavMobile, replaceSettings.beforeend, replaceSettings.afterbegin, replaceSettings.tablet);
+  replaceElements(items, elementName.asideMenu, elementName.asideMenuDesktop, elementName.asideMenuMobile, replaceSettings.beforeend, replaceSettings.afterbegin, replaceSettings.tablet);
 
-  replaceElements(items, elementName.heroContacts, elementName.heroContactsDesktop, elementName.heroContactsMobile, replaceSettings.beforeend, replaceSettings.afterend, replaceSettings.tablet);
+  replaceElements(items, elementName.recommendationAside, elementName.recommendationAsideDesktop, elementName.recommendationAsideMobile, replaceSettings.beforeend, replaceSettings.afterend, replaceSettings.tablet);
 
-  replaceElements(items, elementName.heroBtn, elementName.heroBtnDesktop, elementName.heroBtnMobile, replaceSettings.beforeend, replaceSettings.afterend, replaceSettings.mobile);
-
-
-  replaceElements(items, elementName.resultsBtn, elementName.resultsBtnDesktop, elementName.resultsBtnMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.tablet);
+  replaceElements(items, elementName.feedbackAside, elementName.feedbackAsideDesktop, elementName.feedbackAsideMobile, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.tablet);
 });

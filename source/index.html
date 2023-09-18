@@ -232,6 +232,19 @@
             </aside>
 
             <div class="block__content">
+              <form class="block__search search">
+                <label class="search__label">
+                  <input class="search__input" type="search" placeholder="Поиск файлов">
+
+                  <button class="search__btn">
+                    <svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search-icon'></use>
+                    </svg>
+                    <span>Найти</span>
+                  </button>
+                </label>
+              </form>
+
               <div class="block__top-links">
                 <a class="block__top-link" href="/top-users.html">
                   <ul class="block__link-users">
@@ -255,11 +268,15 @@
                     </li>
                   </ul>
 
-                  <span class="block__link-title"><span>Топ-100</span> пользователей</span>
+                  <span class="block__link-title">
+                    <span>Топ-100
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#arrow-right'></use>
+                      </svg>
+                    </span>
 
-                  <svg width='24' height='24'>
-                    <use href='img/sprite/sprite.svg#arrow-right'></use>
-                  </svg>
+                    пользователей
+                  </span>
                 </a>
 
                 <a class="block__top-link" href="/top-files.html">
@@ -267,13 +284,24 @@
                     <use href='img/sprite/sprite.svg#library'></use>
                   </svg>
 
-                  <span class="block__link-title"><span>Топ-500</span> файлов</span>
+                  <span class="block__link-title">
+                    <span>Топ-500
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#arrow-right'></use>
+                      </svg>
+                    </span>
 
-                  <svg width='24' height='24'>
-                    <use href='img/sprite/sprite.svg#arrow-right'></use>
-                  </svg>
+                    файлов
+                  </span>
                 </a>
               </div>
+
+              <a class="block__add-file btn" href="/add-file.html">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#add-icon'></use>
+                </svg>
+                <span>Добавить файл</span>
+              </a>
 
               <div class="categories">
                 <div class="categories__tabs tabs">
