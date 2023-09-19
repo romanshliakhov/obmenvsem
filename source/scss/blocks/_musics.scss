@@ -27,5 +27,15 @@
       line-height: 18px;
       font-weight: 500;
     }
+
+    &__banner {
+      margin-bottom: 0;
+    }
+
+    &__preview {
+      width: 73px;
+      height: 73px;
+      flex-shrink: 0;
+    }
   }
 }
