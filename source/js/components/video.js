@@ -1,5 +1,11 @@
 import videojs from '../vendor/video.js';
 
-videojs(document.querySelector('.video-js'), {
-	language: 'ru'
-});
+const videoFile = document.querySelector('.video-js');
+
+if(videoFile) {
+  videojs(videoFile, {
+    language: 'ru'
+  });
+}
+
+

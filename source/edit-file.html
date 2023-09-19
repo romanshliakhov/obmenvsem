@@ -235,64 +235,50 @@
               <div class="breadcrumbs">
                 <a class="breadcrumbs__prev" href="/">Обменник</a>
                 <a class="breadcrumbs__prev" href="/videos.html">Видео</a>
-                <span class="breadcrumbs__current">Спорт</span>
+                <span class="breadcrumbs__current">Девушки (личное)</span>
               </div>
 
-              <div class="video">
-                <h1 class="video__title">A gde u nas tut zhuk khitrozhopyjj A v (getmp3 pro) (1).mp4</h1>
+              <div class="edit-file">
+                <h1 class="video__title"><span>Редактировать файл</span> A gde u nas tut zhuk khitrozhopyjj A v (getmp3 pro) (1).mp4</h1>
 
-                <video class="video__file video-js" preload="none" controls muted playsinline poster="img/videos/video7.png">
-                  <source src="img/test.webm" type="video/webm">
-                  <source src="img/test.mp4" type="video/mp4">
-                </video>
+                <form class="edit-file__form">
+                  <fieldset class="edit-file__title">
+                    <span class="edit-file__description-heading">Имя файла</span>
 
-                <ul class="file__download-types">
-                  <li>
-                    <a class="file__download-link" href="#">Скачать файл <span class="file__format">MP4</span></a>
-                    <span class="file__size">13.02 Mb,</span>
-                    <span class="file__resolution">854x480,</span>
-                    <span class="file__duration">03:44,</span>
-                    <span class="file__bitrate">351Kb/s</span>
-                  </li>
-                  <li>
-                    <a class="file__download-link" href="#">Скачать файл <span class="file__format">MP4</span></a>
-                    <span class="file__size">11.97 Mb,</span>
-                    <span class="file__resolution">480x270</span>
-                  </li>
-                  <li>
-                    <a class="file__download-link" href="#">Скачать файл <span class="file__format">3GP</span></a>
-                    <span class="file__size">4.28 Mb,</span>
-                    <span class="file__resolution">176x144</span>
-                  </li>
-                </ul>
+                    <input class="edit-file__input" type="text" name="file-title" placeholder="Введите имя файла">
+                  </fieldset>
 
-                <div class="file__manage">
-                  <div class="file__manage-left">
-                    <button class="file__remove">
-                      <svg width='16' height='16'>
-                        <use href='img/sprite/sprite.svg#x'></use>
-                      </svg>
-                      <span>Убрать из обменника</span>
-                    </button>
-                    <a class="file__edit" href="/edit-file.html">
-                      <svg width='16' height='16'>
-                        <use href='img/sprite/sprite.svg#edit'></use>
-                      </svg>
-                    </a>
-                    <button class="file__favorite">
-                      <svg width='16' height='16'>
-                        <use href='img/sprite/sprite.svg#favorite'></use>
-                      </svg>
-                    </button>
-                  </div>
+                  <fieldset class="edit-file__description">
+                    <span class="edit-file__description-heading">Описание файла <span>до 10000 знаков</span></span>
 
-                  <div class="file__manage-right">
-                    <button class="file__ban">
-                      <svg width='24' height='24'>
-                        <use href='img/sprite/sprite.svg#ban'></use>
-                      </svg>
-                      <span>Забанить файл</span>
-                    </button>
+                    <textarea class="edit-file__textarea" name="file-description" placeholder="Содержание файла, подробности"></textarea>
+                  </fieldset>
+
+                  <fieldset class="edit-file__18plus">
+                    <label>
+                      <input class="edit-file__18plus-checkbox" name="18plus" type="checkbox">
+                      <span>Файл для взрослых 18+</span>
+                    </label>
+                  </fieldset>
+
+                  <fieldset class="edit-file__comments">
+                    <span class="add-file__comments-heading">Кто может комментировать</span>
+
+                    <div class="add-file__comments-variants">
+                      <label class="add-file__comments-variant">
+                        <input class="add-file__radio" type="radio" name="file-comments">
+                        <span>Все</span>
+                      </label>
+                      <label class="add-file__comments-variant">
+                        <input class="add-file__radio" type="radio" name="file-comments" checked>
+                        <span>Друзья</span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="edit-file__btns">
+                    <button class="edit-file__save btn">Сохранить</button>
+
                     <button class="file__delete">
                       <svg width='24' height='24'>
                         <use href='img/sprite/sprite.svg#delete'></use>
@@ -300,126 +286,9 @@
                       <span>Удалить файл</span>
                     </button>
                   </div>
-                </div>
 
-                <ul class="file__details">
-                  <li>
-                    <span class="file__details-head">Файл добавлен</span>
 
-                    <div class="file__author">
-                      <div class="file__author-avatar">
-                        <picture>
-                          <source type='image/webp' srcset='img/users/user4.webp'>
-                          <img width='32' height='32' src='img/users/user4.png' alt='user 4'>
-                        </picture>
-                      </div>
-
-                      <div class="file__author-details">
-                        <a class="file__author-link" href="/user-files.html">Snejana95</a>
-                        <span class="file__uploadtime">21-06-2020, 22:30</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="file__details-head">В папку</span>
-
-                    <span class="file__folders">
-                      <svg width='24' height='24'>
-                        <use href='img/sprite/sprite.svg#folder-default'></use>
-                      </svg>
-
-                      <ul class="file__folders-list">
-                        <li>
-                          <a href="#">Клипы</a>
-                        </li>
-                      </ul>
-                    </span>
-                  </li>
-                  <li>
-                    <span class="file__details-head">В обменник</span>
-
-                    <span class="file__folders">
-                      <svg width='24' height='24'>
-                        <use href='img/sprite/sprite.svg#folder-default'></use>
-                      </svg>
-
-                      <ul class="file__folders-list">
-                        <li>
-                          <a href="#">Видео</a>
-                        </li>
-                        <li>
-                          <a href="#">Музыкальные клипы</a>
-                        </li>
-                      </ul>
-                    </span>
-                  </li>
-                  <li>
-                    <span class="file__details-head">Дата добавления</span>
-
-                    <span class="file__uploadtime">21-06-2020, 22:31</span>
-                  </li>
-                  <li>
-                    <span class="file__details-head">Скачано раз</span>
-
-                    <span class="file__downloads">2159</span>
-                  </li>
-                </ul>
-
-                <div class="comments">
-                  <div class="comments__heading">Комментарии <span>3</span></div>
-
-                  <form class="comments__form">
-                    <label>
-                      <textarea name="comment" placeholder="Введите ваш комментарий..."></textarea>
-                      <button class="btn">Добавить коммент</button>
-                    </label>
-                  </form>
-
-                  <ul class="comments__lists">
-                    <li>
-                      <div class="comment">
-                        <div class="comment__head">
-                          <a class="comment__username" href="#">MarinkaV</a>
-
-                          <div class="comment__pubtime">
-                            <span class="comment__pubtime-day">вчера</span>
-                            <span class="comment__pubtime-time">15:58</span>
-                          </div>
-                        </div>
-
-                        <p class="comment__text">Мне очень нравиться это видео</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="comment">
-                        <div class="comment__head">
-                          <a class="comment__username" href="#">Vasilisa</a>
-
-                          <div class="comment__pubtime">
-                            <span class="comment__pubtime-day">вчера 10:23</span>
-                            <span class="comment__pubtime-time">10:23</span>
-                          </div>
-                        </div>
-
-                        <p class="comment__text">Крутая тренировка, я тоже так хочу, мне очень понравилось видео </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="comment">
-                        <div class="comment__head">
-                          <a class="comment__username" href="#">Karisha</a>
-
-                          <div class="comment__pubtime">
-                            <span class="comment__pubtime-day">вчера 10:23</span>
-                            <span class="comment__pubtime-time">15:58</span>
-                          </div>
-                        </div>
-
-                        <p class="comment__text">Мне очень нравиться это видео</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                </form>
 
                 <div class="advices">
                   <span class="advices__head">Вам может понравиться</span>

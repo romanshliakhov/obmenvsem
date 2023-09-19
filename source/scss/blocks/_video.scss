@@ -11,6 +11,10 @@
 
   &__title {
     margin-bottom: clamp(17px, 1.953vw, 20px);
+
+    span {
+      color: var(--color-gray);
+    }
   }
 
   &__info {
