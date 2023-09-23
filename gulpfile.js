@@ -46,7 +46,11 @@ const buildFolder = './build';
 const paths = {
   srcSvg: `${srcFolder}/img/sprite/*.svg`,
   srcImgFolder: `${srcFolder}/img`,
+  srcVideoFolder: `${srcFolder}/video`,
+  srcAudioFolder: `${srcFolder}/audio`,
   buildImgFolder: `${buildFolder}/img`,
+  buildVideoFolder: `${buildFolder}/video`,
+  buildAudioFolder: `${buildFolder}/audio`,
   buildSpriteFolder: `${buildFolder}/img/sprite`,
   srcScss: `${srcFolder}/scss/**/*.scss`,
   buildCssFolder: `${buildFolder}/css`,
@@ -107,7 +111,6 @@ const styles = () => {
     .pipe(dest(paths.buildCssFolder, { sourcemaps: '.' }))
     .pipe(browserSync.stream());
 };
-
 
 // styles backend
 const stylesBackend = () => {
@@ -176,7 +179,7 @@ const scripts = () => {
         fallback: {
           "path": require.resolve("path-browserify")
         }
-      } 
+      }
     }))
     .on('error', function (err) {
       console.error('WEBPACK ERROR', err);
@@ -221,7 +224,7 @@ const scriptsBackend = () => {
         fallback: {
           "path": require.resolve("path-browserify")
         }
-      } 
+      }
     }))
     .on('error', function (err) {
       console.error('WEBPACK ERROR', err);
@@ -252,10 +255,14 @@ const images = () => {
     .pipe(dest(paths.buildImgFolder))
 };
 
-
 const video = () => {
-  return src([`${paths.srcImgFolder}/**/**.{mp4,webm}`])
-    .pipe(dest(paths.buildImgFolder));
+  return src([`${paths.srcVideoFolder}/**/**.{mp4,webm}`])
+    .pipe(dest(paths.buildVideoFolder));
+};
+
+const audio = () => {
+  return src([`${paths.srcAudioFolder}/**/**.{mp3}`])
+    .pipe(dest(paths.buildAudioFolder));
 };
 
 const webpImages = () => {
@@ -293,13 +300,14 @@ const watchFiles = () => {
   watch(`${srcFolder}/*.html`, htmlInclude);
   watch(`${paths.resourcesFolder}/**`, resources);
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`, images);
-  watch(`${paths.srcImgFolder}/**/**.{webm,mp4,MPEG-4}`, video);
+  watch(`${paths.srcAudioFolder}/**/**.{mp3}`, audio);
+  watch(`${paths.srcVideoFolder}/**/**.{webm,mp4,MPEG-4}`, video);
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
   watch(paths.srcSvg, svgSprites);
 }
 
 const cache = () => {
-  return src(`${buildFolder}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2, pdf,woff,webm, mp4}`, {
+  return src(`${buildFolder}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2,pdf,woff,webm,mp4,mp3}`, {
       base: buildFolder
     })
     .pipe(rev())
@@ -349,11 +357,11 @@ const toProd = (done) => {
   done();
 };
 
-exports.default = series(clean, htmlInclude, pdfInclude, json, scripts, styles, resources, faviconIcon ,images,  webpImages, video, svgSprites, watchFiles);
+exports.default = series(clean, htmlInclude, pdfInclude, json, scripts, styles, resources, faviconIcon ,images, webpImages, audio, video, svgSprites, watchFiles);
 
-exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, video,images, webpImages, svgSprites)
+exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, audio, video, images, webpImages, svgSprites)
 
-exports.build = series(toProd, clean, htmlInclude, json, scripts, styles, resources, faviconIcon ,video,images, webpImages, svgSprites, htmlMinify);
+exports.build = series(toProd, clean, htmlInclude, json, scripts, styles, resources, faviconIcon , audio, video, images, webpImages, svgSprites, htmlMinify);
 
 exports.cache = series(cache, rewrite);
 

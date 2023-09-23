@@ -10,6 +10,7 @@ import './components/spollers.js';
 import './components/tabs.js';
 import './components/replaceEl.js';
 import './components/socialsMore.js';
+import './components/audioPlayer.js';
 
 
 // import './components/parallax.js';
