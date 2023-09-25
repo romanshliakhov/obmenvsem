@@ -45,6 +45,7 @@
   }
 
   &__details {
+    width: 100%;
     margin-bottom: clamp(15px, 2.734vw, 28px);
 
     li {
@@ -118,6 +119,7 @@
   }
 
   &__download-types {
+    width: 100%;
     margin-bottom: clamp(25px, 3.32vw, 34px);
 
     li {

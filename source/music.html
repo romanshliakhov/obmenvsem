@@ -238,32 +238,39 @@
               </div>
 
               <div class="music">
-                <h1 class="music__title">Bingo Players Stadiumx feat Gemaine - Good Times ( 2023 ).mp3</h1>
+                <audio class="music__audio" src="audio/Song 2.mp3"></audio>
 
-                <div class="music__banner">
-                  <div class="music__preview">
-                    <picture>
-                      <source type='image/webp' srcset='img/musics/music1.webp'>
-                      <img width='335' height='335' src='img/musics/music1.png' alt='Music 1'>
-                    </picture>
-                  </div>
-                </div>
+                <h1 class="music__title"></h1>
 
-                <div class="music__file">
-                  <!-- <div class="music__controls">
-                    <button class="music__controls-btn">
+                <div class="music__banner"></div>
+
+                <div class="music__player">
+                  <div class="music__controls">
+                    <button class="pause-btn">
                       <svg width='36' height='36'>
                         <use href='img/sprite/sprite.svg#pause'></use>
                       </svg>
                     </button>
-                  </div> -->
-                  <!-- <audio controls preload="metadata" src="audio/audio.mp3"></audio> -->
-                  <audio controls preload="metadata" src="audio/Dr. Dre - Still D.R.E. (Zajal Lebanese Remix).mp3"></audio>
+                    <button class="play-btn">
+                      <svg width='36' height='36'>
+                        <use href='img/sprite/sprite.svg#play'></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="music__player-details song-inner">
+                    <span class="current-time">00:00</span>
+                    <span class="song-duration">00:00</span>
+
+                    <label>
+                      <input class="seek-bar" type="range" value="0">
+                    </label>
+                  </div>
                 </div>
 
                 <ul class="file__download-types">
                   <li>
-                    <a class="file__download-link" href="#">Скачать файл <span class="file__format">MP3</span></a>
+                    <a class="file__download-link" href="audio/Song 2.mp3" download>Скачать файл <span class="file__format">MP3</span></a>
                     <span class="file__size"> 7.54 Mb,</span>
                     <span class="file__duration">03:13,</span>
                     <span class="file__bitrate">320Kb/s</span>
@@ -541,6 +548,7 @@
     </main>
   </div>
 
+  <script type="text/javascript" src="js/data.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
