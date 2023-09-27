@@ -1,7 +1,11 @@
 .auth {
-  display: flex;
-  flex-direction: column;
-  grid-gap: 17px;
+
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 17px;
+  }
 
   &__labels {
     display: flex;

@@ -8,36 +8,17 @@ const musicDuration = document.querySelector('.song-duration');
 const playBtn = document.querySelector('.music__controls');
 const seekBar = document.querySelector('.seek-bar');
 
-playBtn.addEventListener('click', () => {
-  playBtn.classList.toggle('pause');
+if(playBtn) {
+  playBtn.addEventListener('click', () => {
+    playBtn.classList.toggle('pause');
 
-  if(playBtn.className.includes('pause')) {
-    music.play();
-  } else {
-    music.pause();
-  }
-})
-
-// setup Music
-
-const setMusic = (i) => {
-  seekBar.value = 0; // set range slider value
-  let song = songs[i];
-  currentMusic = i;
-  music.src = song.path;
-
-  songName.innerHTML = `${song.name}.mp3`;
-  musicBanner.style.backgroundImage = `url('${song.cover}')`;
-
-  currentTime.innerHTML = '00:00';
-  setTimeout(() =>{
-    seekBar.max = music.duration;
-    musicDuration.innerHTML = formatTime(music.duration);
-
-  }, 300)
+    if(playBtn.className.includes('pause')) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  })
 }
-
-setMusic(0);
 
 // formation time in min and second format
 const formatTime = (time) => {
@@ -54,12 +35,37 @@ const formatTime = (time) => {
   return `${min} : ${sec}`;
 }
 
-// Seek-bar
-setInterval(() => {
-  seekBar.value = music.currentTime;
-  currentTime.innerHTML = formatTime(music.currentTime);
-}, 500)
+// setup Music
+if(seekBar) {
+  const setMusic = (i) => {
+    seekBar.value = 0; // set range slider value
+    let song = songs[i];
+    currentMusic = i;
+    music.src = song.path;
 
-seekBar.addEventListener('change', () => {
-  music.currentTime = seekBar.value;
-})
+    songName.innerHTML = `${song.name}.mp3`;
+    musicBanner.style.backgroundImage = `url('${song.cover}')`;
+
+    currentTime.innerHTML = '00:00';
+    setTimeout(() =>{
+      seekBar.max = music.duration;
+      musicDuration.innerHTML = formatTime(music.duration);
+
+    }, 300)
+  }
+
+  setMusic(0);
+
+  // Seek-bar
+  setInterval(() => {
+    seekBar.value = music.currentTime;
+    currentTime.innerHTML = formatTime(music.currentTime);
+  }, 500)
+
+  seekBar.addEventListener('change', () => {
+    music.currentTime = seekBar.value;
+  })
+}
+
+
+
