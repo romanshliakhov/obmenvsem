@@ -10,6 +10,7 @@ const seekBar = document.querySelector('.seek-bar');
 
 if(playBtn) {
   playBtn.addEventListener('click', () => {
+    stopOtherMusic();
     playBtn.classList.toggle('pause');
 
     if(playBtn.className.includes('pause')) {
@@ -67,5 +68,34 @@ if(seekBar) {
   })
 }
 
+// Multiplay
+function stopOtherMusic() {
+  document.querySelectorAll('audio').forEach(item => {
+    item.pause();
+  });
 
+  document.querySelectorAll('.music__controls').forEach(item => {
+    item.classList.remove('pause');
+  })
+}
+
+const musicsItem = document.querySelectorAll('.musics__item');
+
+musicsItem.forEach(item => {
+  const musicControl = item.querySelector('.music__controls');
+  const musicFile = item.querySelector('audio');
+
+  if(musicControl) {
+    musicControl.addEventListener('click', () => {
+      stopOtherMusic();
+      musicControl.classList.toggle('pause');
+
+      if(musicControl.className.includes('pause')) {
+        musicFile.play();
+      } else {
+        musicFile.pause();
+      }
+    })
+  }
+})
 

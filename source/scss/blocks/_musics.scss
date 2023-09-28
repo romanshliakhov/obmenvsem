@@ -33,9 +33,17 @@
     }
 
     &__preview {
+      position: relative;
       width: 73px;
       height: 73px;
       flex-shrink: 0;
+    }
+
+    &__controls {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
