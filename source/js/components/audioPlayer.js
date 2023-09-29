@@ -1,6 +1,4 @@
 const music = document.querySelector('.music__audio');
-// const musicBanner = document.querySelector('.music__banner');
-// const songName = document.querySelector('.music__title');
 const currentTime = document.querySelector('.current-time');
 const musicDuration = document.querySelector('.song-duration');
 const seekBar = document.querySelector('.seek-bar');
@@ -67,10 +65,6 @@ if(seekBar) {
 
 // Multiplay
 function stopOtherMusic(except) {
-  // [...document.querySelectorAll('audio')].filter(e => !e.parentNode.contains(except)).forEach(item => {
-  //   item.pause();
-  // });
-
   [...document.querySelectorAll('audio')].forEach(item => {
     item.pause();
   });

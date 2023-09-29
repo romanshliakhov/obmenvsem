@@ -261,7 +261,7 @@ const video = () => {
 };
 
 const audio = () => {
-  return src([`${paths.srcAudioFolder}/**/**.{mp3}`])
+  return src([`${paths.srcAudioFolder}/**/**.mp3`])
     .pipe(dest(paths.buildAudioFolder));
 };
 
